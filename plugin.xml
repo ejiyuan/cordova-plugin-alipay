@@ -35,7 +35,7 @@
         </config-file>
         <source-file src="src/android/alipay.java" target-dir="src/cn/meylink/alipay"/>
         <source-file src="src/android/PayResult.java" target-dir="src/cn/meylink/alipay"/>
-        <source-file src="src/android/lib/alipaySdk-20161129.jar" target-dir="libs"/>
+        <source-file src="src/android/lib/alipaySdk-20170710.jar" target-dir="libs"/>
         
     </platform>
     

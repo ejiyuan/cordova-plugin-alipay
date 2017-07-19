@@ -55,7 +55,8 @@ public class alipay extends CordovaPlugin {
                     EnvUtils.setEnv(EnvUtils.EnvEnum.SANDBOX);
                 }
                 Map<String, String> result = alipay.payV2(payInfo, true);
-                Log.i("msp", result.toString());
+
+                Log.i("msp", result.toString());                
 
                 Message msg = new Message();
                 msg.what = SDK_PAY_FLAG;
