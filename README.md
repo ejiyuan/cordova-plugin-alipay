@@ -1,4 +1,4 @@
-# cordova-plugin-alipay
+# cordova-plugin-alipay-v2
 ### 前言：
 支付宝的cordova插件其实在github上已经有很多了，但是都已经是以前的版本了。在2016年11月的时候支付宝进行了一次更新，支付宝的SDK升级到2.0版本。以前在app中使用支付宝进行支付叫做移动支付，11月之后更名为APP支付。
 ###### 本插件仅支持《APP支付》，不支持移动支付
@@ -9,21 +9,12 @@
 
 ***
 ### 支持平台
-1. android （alipaySdk-20170710.jar）
+1. android （alipaySdk-20161129.jar）
 2. iOS
 
 ***
 ### 安装
-###### 在线安装
-    cordova plugin add cordova-plugin-alipay --variable APP_ID=[your AppId]
-
-    cordova plugin add https://github.com/ejiyuan/cordova-plugin-alipay.git --variable APP_ID=[your AppId] --variable SANDBOX_MODE=[true]
-
-###### 本地安装
-下载插件到本地
-
-    cordova plugin add /your/local/path --variable APP_ID=[your AppId]
-    
+    cordova plugin add https://github.com/ejiyuan/cordova-plugin-alipay-v2.git --variable APP_ID=[your AppId] --variable SANDBOX_MODE=[true] 
 ***
 ### 使用 API
     // 第一步：订单在服务端签名生成订单信息，具体请参考官网进行签名处理

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-plugin-alipay" version="0.0.3" xmlns="http://apache.org/cordova/ns/plugins/1.0"
+<plugin id="cordova-plugin-alipay-v2" version="0.0.3" xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <name>alipay</name>
     <preference name="APP_ID"/>
@@ -11,7 +11,6 @@
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="alipay">
                 <param name="android-package" value="cn.meylink.alipay.alipay"/>
-                <param name="onload" value="true" />
             </feature>
             <preference name="APP_ID" value="$APP_ID" />
             <preference name="SANDBOX_MODE" value="$SANDBOX_MODE" />
@@ -36,8 +35,8 @@
         </config-file>
         <source-file src="src/android/alipay.java" target-dir="src/cn/meylink/alipay"/>
         <source-file src="src/android/PayResult.java" target-dir="src/cn/meylink/alipay"/>
-        <source-file src="src/android/lib/alipaySdk-20170710.jar" target-dir="libs"/>
-        <source-file src="src/android/lib/android-support-v13.jar" target-dir="libs"/>
+        <source-file src="src/android/lib/alipaySdk-20161129.jar" target-dir="libs"/>
+        
     </platform>
     
     <platform name="ios">
